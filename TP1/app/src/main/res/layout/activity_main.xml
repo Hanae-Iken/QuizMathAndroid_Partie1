@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Premier nombre -->
+    <TextView
+        android:id="@+id/tvNombre1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <!-- Deuxième nombre -->
+    <TextView
+        android:id="@+id/tvNombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <!-- Boutons d'opération -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/btnAddition"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="24sp"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnSoustraction"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="24sp"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnMultiplication"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:textSize="24sp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <!-- Résultat -->
+    <TextView
+        android:id="@+id/tvResultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résultat : "
+        android:textSize="28sp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <!-- Bouton Générer -->
+    <Button
+        android:id="@+id/btnGenerer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Générer"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
